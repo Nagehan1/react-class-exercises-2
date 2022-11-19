@@ -1,18 +1,25 @@
 import React from "react";
 import './App.css';
+import Count from "./components/Count";
 import BestPokemon from './components/pokedex/BestPokemon';
 import CaughtPokemon from './components/pokedex/CaughtPokemon';
 import Logo from './components/pokedex/Logo'
+
 const appName = "CYF's";
 const abilities = ["Anticipation", "Adaptability", "Run-Away"];
 const date = new Date().toLocaleDateString();
-function App() {
 
+function App() {
+const logWhenClicked =()=>{
+  console.log("hello")
+}
   return (
     <div>
-     <Logo appName={appName} />
+     <Logo click={logWhenClicked} appName={appName} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+     
+      {/* <Count/> */}
     </div>
   );
 }

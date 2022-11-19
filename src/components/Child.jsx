@@ -1,9 +1,10 @@
+import { Button } from 'bootstrap'
 import React from 'react'
 
 function Child(props) {
   return (
     <div>
-<ul>
+{/* <ul>
   {props.data.map((nam)=>{
     return(    <li>{nam}</li>)
   })}  
@@ -15,7 +16,9 @@ function Child(props) {
             <li>{kat}</li>
         )
     })}
-</ul>
+</ul> */}
+
+<Button onClick={props.click} > click me</Button>
     </div>
   )
 }
