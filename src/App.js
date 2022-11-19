@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import Count from "./components/Count";
+
 import BestPokemon from './components/pokedex/BestPokemon';
 import CaughtPokemon from './components/pokedex/CaughtPokemon';
 import Logo from './components/pokedex/Logo'
