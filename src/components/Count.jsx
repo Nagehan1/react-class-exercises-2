@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Count() {
-const [count,SetCount]=useState(50);
+const [count,SetCount]=useState(5);
  const dicrement=()=>{
     SetCount(count/10)
  }

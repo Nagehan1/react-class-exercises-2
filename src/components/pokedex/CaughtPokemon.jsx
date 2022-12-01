@@ -13,6 +13,7 @@ const random = Math.floor(Math.random() * pokemans.length);
   return (
     <div>
         <p>Caught {caught.length} Pokemon on {props.date}</p>
+        <input type="text" />
       <Button  onClick={catchPokemon} >click me</Button>
       <ul>
         {caught.map((item,index)=>{return<li key={index} >{item}</li>})}
